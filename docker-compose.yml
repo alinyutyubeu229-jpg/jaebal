@@ -1,0 +1,14 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      - FLASK_ENV=development
+
+  nginx:
+    build: ./nginx      # <--- 여기가 핵심! (이미지 대신 빌드 사용)
+    ports:
+      - "8080:80"       # (PPT처럼 8080 포트로 해드릴게요)
+    depends_on:
+      - web
