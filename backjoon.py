@@ -11,5 +11,6 @@ while big >= (total - big):
 print(total)
 
 print("pr 성공"")
+print("push해보깅")
 
     
