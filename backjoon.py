@@ -10,4 +10,6 @@ while big >= (total - big):
 
 print(total)
 
+print("pr 성공"")
+
     
